@@ -1,0 +1,38 @@
+.nav-main{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-logo{
+  padding-left: 30px;
+  width: 50px;
+  height: 50px;
+}
+.links-wrapper{
+  display: flex;
+  align-items: center;
+  padding-right: 850px;
+  a{
+    color: white;
+    margin: 11px;
+    font-family: Inter;
+    padding: 10px;
+    text-decoration: unset;
+    font-style: normal;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+  }
+  a:hover{
+    background-color: rgba(255, 255, 255, 0.36);
+  }
+}
+.nav-right-side{
+  display: flex;
+  p{
+    font-family: Inter;
+    color: darkgrey;
+  }
+  button{
+    color: darkgrey;
+  }
+}
+

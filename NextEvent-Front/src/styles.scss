@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+$primary-color-grey : #3F3F3F;
+$primary-festival-yellow : #FFC303;
+$primary-festival-orange : #FF930F;
+$primary-festival-red : #FF4403;
+$primary-festival-pink : #D35DF5;
+$primary-festival-purple : #8364E8;
+$primary-festival-blue : #5D8BF5;
+@font-face {
+  font-family: Inter;
+  src: url(assets/font/Inter-font.ttf) format("opentype");
+}
+body{
+  background-color: #3F3F3F;
+}

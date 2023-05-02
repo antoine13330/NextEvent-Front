@@ -1,0 +1,29 @@
+<nav class="nav-main">
+  <div id="nav-logo" [routerLink]="'/accueil'">
+    <img class="nav-logo" [src]="logoUrl"/>
+  </div>
+  <span class="links-wrapper">
+        <ng-container *ngFor="let link of navLinks">
+            <a [routerLink]="link.url" routerLinkActive="router-link-active" >
+                {{link.name}}
+            </a>
+        </ng-container>
+  </span>
+  <span class="nav-right-side">
+    <ng-container>
+      <p>PSEUDONYME</p>
+      <div>
+        <mat-menu #appMenu="matMenu">
+          <button mat-menu-item>Mon Compte</button>
+          <button mat-menu-item>Deconexion</button>
+        </mat-menu>
+
+        <button mat-icon-button [matMenuTriggerFor]="appMenu">
+          <mat-icon>keyboard_arrow_down</mat-icon>
+        </button>
+        <img class="nav-logo" [src]="logoUrl"/>
+      </div>
+    </ng-container>
+  </span>
+</nav>
+
