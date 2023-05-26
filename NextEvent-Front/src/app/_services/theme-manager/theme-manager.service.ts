@@ -20,6 +20,11 @@ export class ThemeManagerService {
   }
   applyTheme(param: Theme){
     document.documentElement.style.setProperty('--primary-color', ThemeColor[param])
+    if(param == "Gaming"){
+      document.documentElement.style.setProperty('--secondary-color', '#D35DF5')
+    }else{
+      document.documentElement.style.setProperty('--secondary-color', '#ff6a00')
+    }
   }
   setTheme(param: Theme){
     this._theme.next(param);
