@@ -1,5 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-$primary-color-grey : #3F3F3F;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{
+  --primary-color : #5D8BF5;
+  --primary-color-grey : #3F3F3F;
+  --primary-color-orange : #FF930F;
+}
+
 $primary-festival-yellow : #FFC303;
 $primary-festival-orange : #FF930F;
 $primary-festival-red : #FF4403;
@@ -10,6 +18,13 @@ $primary-festival-blue : #5D8BF5;
   font-family: Inter;
   src: url(assets/font/Inter-font.ttf) format("opentype");
 }
-body{
+body, html{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
   background-color: #3F3F3F;
+}
+body{
+  flex-direction: column;
 }
