@@ -1,0 +1,19 @@
+<div [ngClass]="{'gaming-image': 'Gaming', 'festival-image': 'Festival'}">
+  <img class="banniere" [src]=imageBanniere />
+</div>
+<div class="button-group">
+  <div>
+    <button class="button" [class.active]="currentTheme === 'Festival'" (click)="setTheme('Festival')">
+      <span class="festival">Festival</span>
+      <span class="underline" [ngStyle]="{'background-color': currentTheme === 'Festival' ? 'var(--primary-color)' : 'transparent'}"></span>
+    </button>
+  </div>
+  <div>
+    <button class="button" [routerLink]="'/register-festival'" [class.active]="currentTheme === 'Gaming'" (click)="setTheme('Gaming')">
+      <span class="gaming">Gaming</span>
+      <span class="underline" [ngStyle]="{'background-color': currentTheme === 'Gaming' ? 'var(--primary-color)' : 'transparent'}"></span>
+    </button>
+  </div>
+</div>
+<app-search-bar></app-search-bar>
+<app-main-card></app-main-card>
