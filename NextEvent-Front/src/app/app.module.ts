@@ -18,6 +18,7 @@ import {FormsModule} from "@angular/forms";
 import { MainCardComponent } from './components/main-card/main-card.component';
 import {MatCardModule} from "@angular/material/card";
 import { FavorisCardButtonComponent } from './components/favoris-card-button/favoris-card-button.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { FavorisCardButtonComponent } from './components/favoris-card-button/fav
     RegisterComponent,
     SearchBarComponent,
     MainCardComponent,
-    FavorisCardButtonComponent
+    FavorisCardButtonComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

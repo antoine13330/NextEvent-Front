@@ -9,13 +9,21 @@ import {NavlinkService} from "../../_services/navigation/navlink.service";
 })
 export class NavbarAccueilComponent {
 
-  public logoUrl : string = 'assets/img/logo/NextEvent.png'
+  public logoUrl : string = '';
   public navLinks : NavLink[];
+  public oui: string | undefined;
 
   constructor(
     private navlinksService : NavlinkService,
   ) {
     this.navLinks = this.navlinksService.links
+    // @ts-ignore
+    this.oui = localStorage.getItem("ne-theme");
+    if(this.oui == "Festival"){
+      this.logoUrl = 'assets/img/logo/NextEvent_Orange.png'
+    }else{
+      this.logoUrl = 'assets/img/logo/NextEvent.png'
+    }
   }
 
 }
