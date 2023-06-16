@@ -15,3 +15,18 @@ Pour cette partie web on va avoir plusieurs features pour les utilisateurs :
 -L’objectif serait d’avoir aussi là connexion/inscription pour permettre à l’utilisateur de voir leurs évènements favoris.
 -On a la page profil ou l’utilisateurs pouvoir voir ses informations (email, pseudonyme)
 -Pouvoir changer de thème en fonction de si on choisit festival ou gaming avec des couleurs qui varient sur tout le site internet.
+
+## Technologies utilisées
+
+- Angular
+
+## Bibliothèques utilisées
+
+- Angular material
+
+## Auteurs
+
+- Antoine Despres
+- Denis Chevannae
+- Noémie Dupuis
+- Clément Etienne
