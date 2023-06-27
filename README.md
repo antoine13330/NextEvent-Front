@@ -11,9 +11,13 @@ Le style de chaque composant est géré dans les composants directement.
 # En ce qui concerne les fonctionnalités :
  
 Pour cette partie web on va avoir plusieurs features pour les utilisateurs :
+
 -La page d’accueil avec la visibilité des cards de chaque événement dans les catégories disponibles avec le titre de l’évènement, la date, un bouton pour mettre en favoris, etc …
+
 -L’objectif serait d’avoir aussi là connexion/inscription pour permettre à l’utilisateur de voir leurs évènements favoris.
+
 -On a la page profil ou l’utilisateurs pouvoir voir ses informations (email, pseudonyme)
+
 -Pouvoir changer de thème en fonction de si on choisit festival ou gaming avec des couleurs qui varient sur tout le site internet.
 
 ## Technologies utilisées
