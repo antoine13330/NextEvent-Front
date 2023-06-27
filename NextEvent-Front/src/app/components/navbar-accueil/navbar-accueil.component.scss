@@ -53,9 +53,15 @@
   font-weight: bold;
 }
 
-.register-button{
-  background-image: var(--primary-color-pink);
+.register-button {
+  padding: 5px 10px;
+  background-image: linear-gradient(to right, var(--secondary-color), var(--secondary-color));
+  border: none;
+  border-radius: 3px;
 }
 .login-button{
-  background-color: var(--primary-color-purple);
+  padding: 5px 10px;
+  background-image: linear-gradient(to right, var(--primary-color), var(--primary-color));
+  border: none;
+  border-radius: 3px;
 }

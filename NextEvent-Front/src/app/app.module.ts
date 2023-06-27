@@ -19,6 +19,7 @@ import { MainCardComponent } from './components/main-card/main-card.component';
 import {MatCardModule} from "@angular/material/card";
 import { FavorisCardButtonComponent } from './components/favoris-card-button/favoris-card-button.component';
 import { LoginComponent } from './components/login/login.component';
+import { ProfilComponent } from './components/profil/profil.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { LoginComponent } from './components/login/login.component';
     SearchBarComponent,
     MainCardComponent,
     FavorisCardButtonComponent,
-    LoginComponent
+    LoginComponent,
+    ProfilComponent
   ],
   imports: [
     BrowserModule,
