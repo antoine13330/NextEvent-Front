@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-favoris-card-button',
@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./favoris-card-button.component.scss']
 })
 export class FavorisCardButtonComponent {
-  isFavorite = false;
-
+  @Input() isFavorite = false;
+  @Output() isFavoriteChange = new EventEmitter<boolean>();
   toggleFavorite() {
     this.isFavorite = !this.isFavorite;
   }

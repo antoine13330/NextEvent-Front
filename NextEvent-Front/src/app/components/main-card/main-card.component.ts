@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnChanges, SimpleChanges} from '@angular/core';
 import {Evenement} from "../../_models/Evenement/evenement";
 
 @Component({
@@ -6,11 +6,13 @@ import {Evenement} from "../../_models/Evenement/evenement";
   templateUrl: './main-card.component.html',
   styleUrls: ['./main-card.component.scss']
 })
-export class MainCardComponent {
+export class MainCardComponent implements OnChanges {
   //TODO
   //@Input() evenement: Evenement;
-  @Input() title: string ='TITRE';
-  @Input() date: string ='19 July 2023';
-  @Input() imageUrl: string = 'https://material.angular.io/assets/img/examples/shiba2.jpg';
-  @Input() favorites: string = '10 favorites';
+  @Input() event : Evenement | undefined;
+  @Input() id : number = 0;
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log(this.event);
+  }
+
 }
