@@ -19,6 +19,8 @@ import { MainCardComponent } from './components/main-card/main-card.component';
 import {MatCardModule} from "@angular/material/card";
 import { FavorisCardButtonComponent } from './components/favoris-card-button/favoris-card-button.component';
 import { LoginComponent } from './components/login/login.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DetailsPage } from './_pages/events/details/details.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { LoginComponent } from './components/login/login.component';
     SearchBarComponent,
     MainCardComponent,
     FavorisCardButtonComponent,
-    LoginComponent
+    LoginComponent,
+    DetailsPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ import { LoginComponent } from './components/login/login.component';
     MatButtonModule,
     MatMenuModule,
     FormsModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

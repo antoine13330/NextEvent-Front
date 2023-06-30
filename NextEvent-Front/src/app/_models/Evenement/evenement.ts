@@ -5,8 +5,10 @@ export interface Evenement{
   name: string;
   description: string;
   imageUrl: string;
-  typeEvenement: string;
+  type_evenement: NEventType;
   dateDebut: Date;
   dateFin: Date;
   localisation: Localisation;
 }
+
+export type NEventType  = 'music' | 'gaming'

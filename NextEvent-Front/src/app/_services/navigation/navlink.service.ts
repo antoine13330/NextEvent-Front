@@ -14,12 +14,6 @@ export class NavlinkService {
       isAuthorized : false
     } ,
     {
-      name : 'A Propos',
-      url : '/about',
-      authorization : 0,
-      isAuthorized : false
-    } ,
-    {
       name : 'Contact',
       url : '/contact',
       authorization : 0,

@@ -15,5 +15,8 @@
     </button>
   </div>
 </div>
-<app-search-bar></app-search-bar>
-<app-main-card></app-main-card>
+<app-search-bar [(value)]="searchTerm" (valueChange)="onSearch()"></app-search-bar>
+<div class="accueil-card--wrapper">
+  <app-main-card *ngFor="let event of events; let i = index" [event]="event" [id]="i"></app-main-card>
+</div>
+

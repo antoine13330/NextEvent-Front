@@ -1,11 +1,11 @@
-<div class="card">
+<div class="card" *ngIf="event" [routerLink]="'/event/'+event.id">
   <div class="card-header">
-    <h1>{{ title }}</h1>
-    <h3>{{ date }}</h3>
-    <p>{{ favorites }}</p>
+    <h1>{{ event.name }}</h1>
+    <h3>{{ event.dateDebut }} - {{ event.dateFin }}</h3>
+    <p>13 favorites</p>
     <app-favoris-card-button></app-favoris-card-button>
   </div>
   <div class="image">
-    <img class="image" [src]="imageUrl">
+    <img class="image" [src]="'https://picsum.photos/id/'+ (200 + id) +'/400/400'">
   </div>
 </div>
