@@ -1,36 +1,27 @@
-# NextEvent-Front
+# NextEventFront
 
-NextEvent est une application pour référencer des événements de jeux vidéo et des festivals. L'application offre une gestion de favoris pour aider les utilisateurs à suivre leurs événements préférés.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
-# Architecture:
+## Development server
 
-Voici l’architecture de notre projet maintenant, avec les modèles, les services, les composants.
-Ainsi on peut se permettre de tout séparer et d’utiliser pleinement les principes d’Angular afin d’appeler chaque composant en fonction de ce que l’on souhaite afficher.
-Le style de chaque composant est géré dans les composants directement.
- 
-# En ce qui concerne les fonctionnalités :
- 
-Pour cette partie web on va avoir plusieurs features pour les utilisateurs :
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
--La page d’accueil avec la visibilité des cards de chaque événement dans les catégories disponibles avec le titre de l’évènement, la date, un bouton pour mettre en favoris, etc …
+## Code scaffolding
 
--L’objectif serait d’avoir aussi là connexion/inscription pour permettre à l’utilisateur de voir leurs évènements favoris.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
--On a la page profil ou l’utilisateurs pouvoir voir ses informations (email, pseudonyme)
+## Build
 
--Pouvoir changer de thème en fonction de si on choisit festival ou gaming avec des couleurs qui varient sur tout le site internet.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Technologies utilisées
+## Running unit tests
 
-- Angular
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Bibliothèques utilisées
+## Running end-to-end tests
 
-- Angular material
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Auteurs
+## Further help
 
-- Antoine Despres
-- Denis Chevannae
-- Noémie Dupuis
-- Clément Etienne
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
